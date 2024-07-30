@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pattern Using JS</title>
+</head>
+<body>
+	<center>
+		<!-- text field with id=i_row this will be use to accept user input which is the number of rows-->
+		<input type="text" id="i_row"><br>
+		<!-- button with id=gen and has an onclick listener trigerring the showPattern() function -->
+		<button id="gen" onclick="showPattern();">Generate</button>
+		<!-- a div tag that will serve as output area an inline css was added to display it with wa border of 1px color black -->
+		<div id="res" style="border: solid 1px black;"></div>
+	</center>
+	<!-- This tag tells the browser the start of your internal javascript -->
+	<script type="text/javascript">
+		//a function was created namely showPatter()
+		function showPattern(){
+			//get the element with id=i_row which in this example is the input tag and assign it to a variable name i_row
+			var i_row = document.getElementById('i_row').value;
+			//get the element with id=res which in this example is the div tag and assign it to a variable name res
+			var res = document.getElementById('res');
+			//set the innerHTML value of res to "" or blank
+			res.innerHTML="";
+
+			//test if the i_row value is an integer and is less than or equal to 50, if not display an alert message
+			if(Number.isInteger(+i_row) && i_row <= 50){
+				//run a loop base on the value of i_row which signifies a row for each iteration
+				for(var i=0;i<i_row;i++){
+
+					//add two non-blocking space to adjust the location of the "*" character
+					for(var j=i_row - i;j>0;j--){
+						res.innerHTML += "&nbsp;&nbsp;";
+					}
+
+					//add "*" base on the value of i variable
+					for(var k=i;k>0;k--){
+						res.innerHTML += "*";
+					}
+
+					//add new line using break tag
+					res.innerHTML += "<br>";
+				}
+			}else{
+				alert('Input was invalid or out of range!');
+			}
+	}
+	</script>
+	<!-- This tag tells the browser the end of your internal javascript -->
+</body>
+</html>

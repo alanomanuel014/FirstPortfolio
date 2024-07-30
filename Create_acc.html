@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/components/badge/">
+    <style>
+        body {
+            background-image: url('bg2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color:  #313131;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:  rgba(249, 249, 249, 0.7);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            background-color: #FF0000;
+            color: #fff;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .login-link a {
+            color: #FF0000;
+            text-decoration: none;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background: #FF0000; /* Neon Red background color of the navbar */
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Neon Red box shadow for depth effect */
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            font-size: 18px;
+            color: #ff005d; /* Neon Red text color */
+            position: relative;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        .spinner-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Quirk App</a>
+    </nav>
+    <div class="container">
+        <h2>Create Account</h2>
+        <form id="createAccountForm">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required><br>
+            <input type="submit" value="Create Account">
+        </form>
+        <div class="login-link">
+            <span>Already have an account? <a href="file:///C:/Users/Neil%20Porciuncula/OneDrive/Documents/html/Loging_Portfolio.html">Login here</a></span>
+        </div>
+    </div>
+      <!-- Spinner Overlay -->
+      <div class="spinner-overlay">
+        <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden"></span>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('createAccountForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            document.querySelector('.spinner-overlay').style.display = 'flex'; // Show spinner
+                setTimeout(function() {
+                    window.location.href = users[username];
+                }, 9000); // Delay to show the spinner 
+            window.location.href = 'file:///C:/Users/Neil%20Porciuncula/OneDrive/Documents/html/NEWACC.html'; // Change this to the desired page
+        });
+    </script>
+</body>
+</html>

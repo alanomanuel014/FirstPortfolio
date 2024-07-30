@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Manuel's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/components/badge/">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('Alano.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .grey-card {
+            background-color: #313131; 
+            color: #ffffff; /* Set text color to white or another contrasting color */
+        }
+
+        .navbar {
+            background: #FF0000; /* Neon Red background color of the navbar */
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Neon Red box shadow for depth effect */
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            font-size: 18px;
+            color: #ff005d; /* Neon Red text color */
+            position: relative;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        .nav-link:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #ff0000; /* Neon Red Line color */
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .nav-link:hover:before,
+        .nav-link:focus:before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        #introduction {
+            color: #ffffff;
+        }
+
+        #education {
+            color: #ffffff;
+        }
+
+        #skills {
+            color: #ffffff; 
+        }
+
+        #projects {
+            color: #ffffff;
+        }
+
+        #contact {
+            color: #ffffff; 
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Manuel's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#introduction">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/Neil%20Porciuncula/OneDrive/Documents/html/Loging_Portfolio.html">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <!-- Introduction Section -->
+    <div class="container mt-5">
+        <section id="introduction">
+            <h1>MANUEL N. ALANO</h1>
+            <p>Web Developer | Designer | Problem Solver</p>
+        </section>
+    </div>
+
+    <!-- Education Section -->
+    <div class="container mt-5">
+        <section id="education">
+            <h2>EDUCATION</h2>
+            <ul>
+                <li>Grace Park Elementary School</li>
+                <li>Maria Clara High School</li>
+                <li>Systems Plus Computer Colleges - Bachelor's in Information Technology
+                    <p>Graduation Year: 2025</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    
+    <!-- Skills Section -->
+    <div class="container mt-5">
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Computer Programming</li>
+                <li>2D Animation</li>
+                <li>3D Animation</li>
+                <li>Game Development</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container mt-5">
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card grey-card">
+                        <img src="2D RPG Game.png" class="card-img-top" alt="Project 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">2D RPG Game</h5>
+                            <p class="card-text">I got to practice any ways in game development before I choose the path of IT and this is the work of my research before I become an ICT student.</p>
+                            <a href="#" class="btn btn-outline-danger">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card grey-card">
+                        <img src="2D Prototype.png" class="card-img-top" alt="Project 2 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">2D Prototype Game</h5>
+                            <p class="card-text">This is the work of me and some of the people in my group in early years in ICT. The work is only a prototype to show what our game will look like.</p>
+                            <a href="#" class="btn btn-outline-danger">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card grey-card">
+                        <img src="Combi.png" class="card-img-top" alt="Project 3 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Combi: Descendants of the Sun</h5>
+                            <p class="card-text">This is the final game and my capstone for the Senior High School.</p>
+                            <a href="#" class="btn btn-outline-danger">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card grey-card">
+                        <img src="FAST.png" class="card-img-top" alt="Project 4 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">FAST</h5>
+                            <p class="card-text">One of the commisions that I got. It is a product showcase that shows different functions of the certain product.</p>
+                            <a href="#" class="btn btn-outline-danger">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card grey-card">
+                        <img src="Wrath.png" class="card-img-top" alt="Project 5 Image">
+                        <div class="card-body">
+                            <h5 class= "card-title">WRATH</h5>
+                            <p class="card-text">One of the commisions that I got. It is a product showcase that shows different functions of the certain product.</p>
+                            <a href="#" class="btn btn-outline-danger">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card grey-card">
+                        <img src="My First Animation.png" class="card-img-top" alt="Project 5 Image">
+                        <div class="card-body">
+                            <h5 class= "card-title">My First Animation</h5>
+                            <p class="card-text">This is my first work in Animation. It's task is to create a doodle of your own name and animate it in a short movie.</p>
+                            <a href="#" class="btn btn-outline-danger">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container mt-5">
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p> Instagram: <a href="https://www.instagram.com/neil_porciuncula/" style="color: #FF0000;">alano_manuel</a></p>
+            <p> Email: <a href="mailto:porciiunculaneilpatrick@gmail.com" style="color: #FF0000;">manuelalano336@gmail.com</a></p>
+            <p> Facebook: <a href="https://www.facebook.com/neil.patrick.porciuncula" style="color: #FF0000;">Manuel Alano</a></p>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<!-- jQuery code for project section -->
+<script>
+    $(document).ready(function () {
+        // Add a hover effect to project cards
+        $('.card').hover(
+            function () {
+                $(this).addClass('shadow-lg').css('cursor', 'pointer');
+            },
+            function () {
+                $(this).removeClass('shadow-lg');
+            }
+        );
+
+        // Open source code link in a new tab/window when button is clicked
+        $('.card .btn').click(function () {
+            var sourceCodeLink = $(this).attr('href');
+            window.open(sourceCodeLink, '_blank');
+        });
+    });
+</script>
+
+</html>

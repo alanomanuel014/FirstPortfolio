@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>User's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/components/badge/">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('https://cdn.wallpapersafari.com/83/77/Q6Lu2C.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .grey-card {
+            background-color: #313131; 
+            color: #ffffff; /* Set text color to white or another contrasting color */
+        }
+
+        .navbar {
+            background: #FF0000; /* Neon Red background color of the navbar */
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); /* Neon Red box shadow for depth effect */
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            font-size: 18px;
+            color: #ff005d; /* Neon Red text color */
+            position: relative;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        .nav-link:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #ff0000; /* Neon Red Line color */
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .nav-link:hover:before,
+        .nav-link:focus:before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        #introduction {
+            color: #ffffff;
+        }
+
+        #education {
+            color: #ffffff;
+        }
+
+        #skills {
+            color: #ffffff; 
+        }
+
+        #projects {
+            color: #ffffff;
+        }
+
+        #contact {
+            color: #ffffff; 
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">User's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#introduction">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/Neil%20Porciuncula/OneDrive/Documents/html/Loging_Portfolio.html">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <!-- Introduction Section -->
+    <div class="container mt-5">
+        <section id="introduction">
+            <h1 id="intro-name" contenteditable="true">FULL NAME</h1>
+            <p id="intro-traits" contenteditable="true">Add traits | Add traits | Add traits</p>
+        </section>
+    </div>
+
+    <!-- Education Section -->
+    <div class="container mt-5">
+        <section id="education">
+            <h2 id="education-heading" contenteditable="true">EDUCATION</h2>
+            <ul id="education-list" contenteditable="true">
+                <li>Name of your (Elementary School)</li>
+                <li>Name of your (High School)</li>
+                <li>Name of your (College)
+                    <p>Graduation Year: 20XX</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    
+    <!-- Skills Section -->
+    <div class="container mt-5">
+        <section id="skills">
+            <h2 id="skills-heading" contenteditable="true">Skills</h2>
+            <ul id="skills-list" contenteditable="true">
+                <li>Your skill</li>
+                <li>Your skill</li>
+                <li>Your skill</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container mt-5">
+        <section id="projects">
+            <h2 id="projects-heading" contenteditable="true">Projects</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card grey-card">
+                        <img src="acc.png" class="card-img-top" alt="Project 1 Image">
+                        <div class="card-body">
+                            <h5 id="project1-title" class="card-title" contenteditable="true">Add Title</h5>
+                            <p id="project1-description" class="card-text" contenteditable="true">Add description</p>
+                            <a id="project1-link" href="#" class="btn btn-outline-danger" contenteditable="true">Add Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container mt-5">
+        <section id="contact">
+            <h2 id="contact-heading" contenteditable="true">Contact Information</h2>
+            <p id="contact-instagram" contenteditable="true">Instagram: <a href="" style="color: #FF0000;">Add your acc</a></p>
+            <p id="contact-email" contenteditable="true">Email: <a href="" style="color: #FF0000;">Add your acc</a></p>
+            <p id="contact-facebook" contenteditable="true">Facebook: <a href="" style="color: #FF0000;">Add your acc </a></p>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Save Content Script -->
+    <script>
+        $(document).ready(function () {
+            $('.card').hover(
+                function () {
+                    $(this).addClass('shadow-lg').css('cursor', 'pointer');
+                },
+                function () {
+                    $(this).removeClass('shadow-lg');
+                }
+            );
+
+            $('.card .btn').click(function () {
+                var sourceCodeLink = $(this).attr('href');
+                window.open(sourceCodeLink, '_blank');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const editableElements = document.querySelectorAll('[contenteditable="true"]');
+            editableElements.forEach(element => {
+                element.addEventListener('blur', saveContent);
+            });
+        });
+
+        function saveContent(event) {
+            const element = event.target;
+            localStorage.setItem(element.id, element.innerHTML);
+        }
+
+        function loadContent() {
+            const editableElements = document.querySelectorAll('[contenteditable="true"]');
+            editableElements.forEach(element => {
+                const savedContent = localStorage.getItem(element.id);
+                if (savedContent) {
+                    element.innerHTML = savedContent;
+                }
+            });
+        }
+
+        loadContent();
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 2 Porciuncula</title>
+</head>
+<body>
+	<center>
+		<input type="text" id="i_row"><br>
+		<button id="gen" onclick="showPattern();">Generate</button>
+		<div id="res" style="border: solid 1px black;"></div>
+	</center>
+	<script type="text/javascript">
+        function showPattern() {
+          var i_row = document.getElementById('i_row').value;
+          var res = document.getElementById('res');
+          res.innerHTML = "";
+      
+          if (Number.isInteger(+i_row) && i_row <= 50) {
+            for (var i = 1; i <= i_row; i++) {
+              for (var j = i_row - i; j > 0; j--) {
+                res.innerHTML += "&nbsp;&nbsp;";
+              }
+      
+              for (var k = 1; k <= i * 2 - 1; k++) {
+                res.innerHTML += "*";
+              }
+      
+              res.innerHTML += "<br>";
+            }
+          } else {
+            alert('Input was invalid or out of range!');
+          }
+        }
+      </script>
+</body>
+</html>
